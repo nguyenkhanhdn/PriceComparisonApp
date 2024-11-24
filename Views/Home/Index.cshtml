@@ -1,0 +1,213 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section id="hero" class="hero section">
+    <img style="opacity: 0.9 !important;" src="~/assets/img/pricecompare1.jpg" alt="" data-aos="fade-in">
+    <div class="container position-relative">
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>So sánh mọi thứ</h4>
+            <form asp-action="search" asp-controller="Home" method="POST">
+                <div style="margin-top: 30px;padding: 6px 8px;position: relative;border-radius: 50px;border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);display: flex;background-color: var(--contrast-color);transition: 0.3s;">
+                    <input type="text" name="product" style="border:0;padding: 4px 8px;width: 100%;background-color: var(--contrast-color); color: var(--default-color);">
+                    <input type="submit" value="So sánh" style="border: 0;font-size: 16px;padding: 0 20px;margin: -8px -9px -8px 0;background: var(--accent-color);color: var(--contrast-color);transition:0.3s;border-radius:50px;">
+                </div>
+            </form>
+        </div>
+        <!--<div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+            <h2>Welcome to Our Website</h2>
+            <p>We are team of talented designers making websites with Bootstrap</p>
+        </div>-->
+        <!-- End Welcome -->
+
+        <div class="content row gy-4">
+            <div class="col-lg-4 d-flex align-items-stretch">
+                <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+                    <h3>Vì sao sử dụng PriceComparison?</h3>
+                    <p>
+                        <strong>Tiết kiệm thời gian và chi phí</strong>: Giúp người tiêu dùng dễ dàng so sánh giá từ nhiều nhà cung cấp mà không cần truy cập từng trang web riêng lẻ.
+                        <br /><strong>Tăng tính minh bạch</strong>: Cung cấp cái nhìn tổng quan về giá cả thị trường, giúp người tiêu dùng đưa ra quyết định mua sắm thông minh hơn.
+                        <br /><strong>Cạnh tranh lành mạnh</strong>: Giúp doanh nghiệp tiếp cận nhiều khách hàng hơn và thúc đẩy cạnh tranh, từ đó cải thiện chất lượng sản phẩm và dịch vụ.
+                        <br /><strong>Cập nhật thông tin nhanh chóng</strong>: Thường xuyên cập nhật giá cả và khuyến mãi mới nhất, giúp người tiêu dùng không bỏ lỡ các cơ hội mua sắm tốt.
+                    </p>
+                    <div class="text-center">
+                        <a href="#" class="more-btn"><span>Tìm hiểu thêm</span> <i class="bi bi-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div><!-- End Why Box -->
+
+            <div class="col-lg-8 d-flex align-items-stretch">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="row gy-4">
+
+                        <div class="col-xl-4 d-flex align-items-stretch">
+                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
+                                <i class="material-icons" style="font-size:48px;color:darkorange;">&#xe320;</i>
+                                <h4>Máy tính xách tay</h4>
+                                <p>So sánh giá mặt hàng máy tính xách tay</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="col-xl-4 d-flex align-items-stretch">
+                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
+                                <i class="material-icons" style="font-size:48px;color:darkorange;">&#xe331;</i>
+                                <h4>Điện thoại thông minh</h4>
+                                <p>So sánh giá mặt hàng điện thoại thông minh</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                        <div class="col-xl-4 d-flex align-items-stretch">
+                            <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
+                                <i class="bi bi-inboxes"></i>
+                                <h4>Phụ kiện</h4>
+                                <p>So sánh giá các mặt hàng phụ kiện máy tính xác tay, điện thoại thông minh</p>
+                            </div>
+                        </div><!-- End Icon Box -->
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- End  Content-->
+
+    </div>
+
+</section><!-- /Hero Section -->
+<!-- Clients Section -->
+<section id="clients" class="clients section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper">
+            <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 60
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 80
+                    },
+                    "992": {
+                      "slidesPerView": 6,
+                      "spaceBetween": 120
+                    }
+                  }
+                }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</section><!-- /Clients Section -->
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-3">
+
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="pricing-item">
+                    <h3>Free</h3>
+                    <h4><sup>$</sup>0<span> / month</span></h4>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li class="na">Pharetra massa</li>
+                        <li class="na">Massa ultricies mi</li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                </div>
+            </div><!-- End Pricing Item -->
+
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="pricing-item featured">
+                    <h3>Business</h3>
+                    <h4><sup>$</sup>19<span> / month</span></h4>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Pharetra massa</li>
+                        <li class="na">Massa ultricies mi</li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                </div>
+            </div><!-- End Pricing Item -->
+
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="pricing-item">
+                    <h3>Developer</h3>
+                    <h4><sup>$</sup>29<span> / month</span></h4>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Pharetra massa</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                </div>
+            </div><!-- End Pricing Item -->
+
+            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="pricing-item">
+                    <span class="advanced">Advanced</span>
+                    <h3>Ultimate</h3>
+                    <h4><sup>$</sup>49<span> / month</span></h4>
+                    <ul>
+                        <li>Aida dere</li>
+                        <li>Nec feugiat nisl</li>
+                        <li>Nulla at volutpat dola</li>
+                        <li>Pharetra massa</li>
+                        <li>Massa ultricies mi</li>
+                    </ul>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-buy">Buy Now</a>
+                    </div>
+                </div>
+            </div><!-- End Pricing Item -->
+        </div>
+    </div>
+</section><!-- /Pricing Section -->
