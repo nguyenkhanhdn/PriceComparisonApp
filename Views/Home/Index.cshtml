@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<PriceComparisonApp.Models.Product>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -44,7 +45,7 @@
                             <div class="icon-box" data-aos="zoom-out" data-aos-delay="300">
                                 <i class="material-icons" style="font-size:48px;color:darkorange;">&#xe320;</i>
                                 <h4>Máy tính xách tay</h4>
-                                <p>So sánh giá mặt hàng máy tính xách tay</p>
+                                <p><a href="/Home/ProductsByCategory?category=Laptop">So sánh giá mặt hàng máy tính xách tay</a> </p>
                             </div>
                         </div><!-- End Icon Box -->
 
@@ -52,7 +53,8 @@
                             <div class="icon-box" data-aos="zoom-out" data-aos-delay="400">
                                 <i class="material-icons" style="font-size:48px;color:darkorange;">&#xe331;</i>
                                 <h4>Điện thoại thông minh</h4>
-                                <p>So sánh giá mặt hàng điện thoại thông minh</p>
+                                <p><a href="/Home/ProductsByCategory?category=Smart phone">So sánh giá mặt hàng điện thoại thông minh</a>
+                                    </p>
                             </div>
                         </div><!-- End Icon Box -->
 
@@ -60,7 +62,7 @@
                             <div class="icon-box" data-aos="zoom-out" data-aos-delay="500">
                                 <i class="bi bi-inboxes"></i>
                                 <h4>Phụ kiện</h4>
-                                <p>So sánh giá các mặt hàng phụ kiện máy tính xác tay, điện thoại thông minh</p>
+                                <p><a href="/Home/ProductsByCategory?category=accessories">So sánh giá các mặt hàng phụ kiện máy tính xác tay, điện thoại thông minh</a></></p>
                             </div>
                         </div><!-- End Icon Box -->
 
@@ -132,82 +134,52 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Sản phẩm</h2>
+        <p>So sánh sản phẩm</p>
     </div><!-- End Section Title -->
 
     <div class="container">
 
         <div class="row gy-3">
-
-            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="pricing-item">
-                    <h3>Free</h3>
-                    <h4><sup>$</sup>0<span> / month</span></h4>
-                    <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li class="na">Pharetra massa</li>
-                        <li class="na">Massa ultricies mi</li>
-                    </ul>
-                    <div class="btn-wrap">
-                        <a href="#" class="btn-buy">Buy Now</a>
-                    </div>
-                </div>
-            </div><!-- End Pricing Item -->
-
-            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="pricing-item featured">
-                    <h3>Business</h3>
-                    <h4><sup>$</sup>19<span> / month</span></h4>
-                    <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li>Pharetra massa</li>
-                        <li class="na">Massa ultricies mi</li>
-                    </ul>
-                    <div class="btn-wrap">
-                        <a href="#" class="btn-buy">Buy Now</a>
-                    </div>
-                </div>
-            </div><!-- End Pricing Item -->
-
-            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="pricing-item">
-                    <h3>Developer</h3>
-                    <h4><sup>$</sup>29<span> / month</span></h4>
-                    <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li>Pharetra massa</li>
-                        <li>Massa ultricies mi</li>
-                    </ul>
-                    <div class="btn-wrap">
-                        <a href="#" class="btn-buy">Buy Now</a>
-                    </div>
-                </div>
-            </div><!-- End Pricing Item -->
-
-            <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="pricing-item">
-                    <span class="advanced">Advanced</span>
-                    <h3>Ultimate</h3>
-                    <h4><sup>$</sup>49<span> / month</span></h4>
-                    <ul>
-                        <li>Aida dere</li>
-                        <li>Nec feugiat nisl</li>
-                        <li>Nulla at volutpat dola</li>
-                        <li>Pharetra massa</li>
-                        <li>Massa ultricies mi</li>
-                    </ul>
-                    <div class="btn-wrap">
-                        <a href="#" class="btn-buy">Buy Now</a>
-                    </div>
-                </div>
-            </div><!-- End Pricing Item -->
+             @foreach (var item in Model)
+            {
+                <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    @if(ViewBag.MinPrice == item.Price)
+                    {
+                        <div class="pricing-item featured">
+                            <h3>@item.Shop</h3>
+                            <h4><strong>@item.Name</strong></h4>
+                            <h4>@item.Price</h4>
+                            <ul>
+                                <li>@item.Branch</li>
+                                <li>@item.Memory GB</li>
+                                <li>@item.Rate</li>
+                                <li>@item.Category</li>
+                                <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    }else{
+                           <div class="pricing-item">
+                            <h3>@item.Shop</h3>
+                            <h4><strong>@item.Name</strong></h4>
+                            <h4>@item.Price</h4>
+                            <ul>
+                                <li>@item.Branch</li>
+                                <li>@item.Memory GB</li>
+                                <li>@item.Rate</li>
+                                <li>@item.Category</li>
+                                <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    }
+                </div><!-- End Pricing Item -->
+            }
         </div>
     </div>
 </section><!-- /Pricing Section -->

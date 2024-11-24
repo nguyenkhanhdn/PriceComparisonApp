@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Index";
+    Layout = "_AdLayout";
 }
 <!-- Services Section -->
 <section id="services" class="services section">
@@ -62,7 +63,9 @@
                                 @Html.DisplayFor(modelItem => item.Category)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.ImgUrl)
+                                @* @Html.DisplayFor(modelItem => item.ImgUrl)
+ *@
+                                <img srcset="@item.ImgUrl" class="img-fluid" style="width:150px;" />
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Memory)
@@ -84,5 +87,5 @@
             </table>
         </div>
     </div>
-    <
+    
 </section>

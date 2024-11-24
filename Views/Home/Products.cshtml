@@ -1,0 +1,120 @@
+﻿@model IEnumerable<PriceComparisonApp.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Clients Section -->
+<section id="clients" class="clients section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper">
+            <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 60
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 80
+                    },
+                    "992": {
+                      "slidesPerView": 6,
+                      "spaceBetween": 120
+                    }
+                  }
+                }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                <div class="swiper-slide"><img src="~/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+</section><!-- /Clients Section -->
+<!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Sản phẩm</h2>
+        <p>So sánh sản phẩm</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-3">
+            @foreach (var item in Model)
+            {
+                <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    @if (ViewBag.MinPrice == item.Price)
+                    {
+                        <div class="pricing-item featured">
+                            <h3>@item.Shop</h3>
+                            <h4><strong>@item.Name</strong></h4>
+                            <h4>@item.Price</h4>
+                            <ul>
+                                <li>@item.Branch</li>
+                                <li>@item.Memory GB</li>
+                                <li>@item.Rate</li>
+                                <li>@item.Category</li>
+                                <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="pricing-item">
+                            <h3>@item.Shop</h3>
+                            <h4><strong>@item.Name</strong></h4>
+                            <h4>@item.Price</h4>
+                            <ul>
+                                <li>@item.Branch</li>
+                                <li>@item.Memory GB</li>
+                                <li>@item.Rate</li>
+                                <li>@item.Category</li>
+                                <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="#" class="btn-buy">Buy Now</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <!-- End Pricing Item -->
+            }
+        </div>
+    </div>
+</section><!-- /Pricing Section -->
