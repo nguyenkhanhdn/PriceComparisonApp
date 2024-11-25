@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
 using PriceComparisonApp.Data;
 using PriceComparisonApp.Models;
 using System.Diagnostics;
@@ -32,6 +34,23 @@ namespace PriceComparisonApp.Controllers
 
             return View("Products",products.ToList());
 
+        }
+
+        public IActionResult ProdDetail(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = _context.Products.Find(id);
+            
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
         }
 
         public IActionResult ProductsByCategory(string category)
