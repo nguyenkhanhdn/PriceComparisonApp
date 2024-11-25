@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using PriceComparisonApp.Data;
 using PriceComparisonApp.Models;
@@ -50,6 +51,9 @@ namespace PriceComparisonApp.Controllers
                 return NotFound();
             }
 
+            var twoRelatedProducts = _context.Products.
+                Where(p => p.Name.Contains(product.Name)).Where(pp => pp.Id != id).ToList();
+            ViewData["twoProducts"] = twoRelatedProducts;
             return View(product);
         }
 
