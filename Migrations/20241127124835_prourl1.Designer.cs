@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PriceComparisonApp.Data;
 
@@ -10,9 +11,11 @@ using PriceComparisonApp.Data;
 namespace PriceComparisonApp.Migrations
 {
     [DbContext(typeof(PriceComparisonDbContext))]
-    partial class PriceComparisonDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241127124835_prourl1")]
+    partial class prourl1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,7 +57,7 @@ namespace PriceComparisonApp.Migrations
                     b.Property<float>("Price")
                         .HasColumnType("real");
 
-                    b.Property<string>("ProductUrl")
+                    b.Property<string>("ProUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Rate")
@@ -63,9 +66,6 @@ namespace PriceComparisonApp.Migrations
                     b.Property<string>("Shop")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SoldQty")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

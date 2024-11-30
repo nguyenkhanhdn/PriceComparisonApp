@@ -79,11 +79,22 @@ namespace PriceComparisonApp.Controllers
 
         public IActionResult Index()
         {
+            try
+            {
+                var products = _context.Products.OrderByDescending(p => p.Name).Take(3).ToList();
+                var minPrice = products.MinBy(p => p.Price);
+                if (minPrice!= null)
+                    ViewBag.MinPrice = minPrice.Price;
+                
+                return View(products);
+            }
+            catch (Exception ex)
+            {
 
-            var products = _context.Products.OrderByDescending(p=>p.Name).Take(3).ToList();
-            var minPrice = products.MinBy(p => p.Price);
-            ViewBag.MinPrice = minPrice.Price;
-            return View(products);
+                return View();
+            }
+
+            
         }
 
 
