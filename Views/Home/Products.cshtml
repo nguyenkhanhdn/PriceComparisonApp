@@ -4,7 +4,11 @@
     ViewData["Title"] = "Products";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style>
+    .checked {
+        color: orange;
+    }
+</style>
 <!-- Clients Section -->
 <section id="clients" class="clients section">
 
@@ -102,7 +106,21 @@
                             <ul>
                                 <li>@item.Branch</li>
                                 <li>@item.Memory GB</li>
-                                <li>@item.Rate</li>
+                                <li>
+                                    @{
+                                        var int_val = (int)item.Rate;
+                                        var rem_val = item.Rate % 10;
+                                        for (int i = 1; i <= int_val; i++)
+                                        {
+                                            <span class="fa fa-star checked"></span>
+                                        }
+                                        if (rem_val >= 0.5)
+                                        {
+                                            <span class="fa fa-star-half checked"></span>
+                                        }
+                                    }
+                                    (@item.Rate)
+                                </li>
                                 <li>@item.Category</li>
                                 <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
                             </ul>
