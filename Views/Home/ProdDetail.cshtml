@@ -69,111 +69,35 @@
     </div><!-- End Section Title -->
 
     <div class="container">
-
-        <div class="row gy-3">
-            <div class="col-xl-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                @if (ViewData["twoProducts"] != null)
+        <div class="row gy-3">            
+            @if (ViewData["twoProducts"] != null)
+            {
+                var products = ViewData["twoProducts"] as List<Product>;
+                foreach(var prod in products)
                 {
-                    var pro = ViewData["twoProducts"] as List<Product>;
-                    if (pro[0] != null)
-                    {
-                        <div class="pricing-item featured">
-                            <h3>@pro[0].Shop</h3>
-                            <h4>@pro[0].Name</h4>
-                            <h4>@pro[0].Price</h4>
+                    <div class="col-xl-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-item">
+                            <h4>@prod.Shop</h4>
+                            <h5>@prod.Name</h5>
+                            <h5>@prod.Price</h5>
                             <ul>
-                                <li>@pro[0].Branch</li>
-                                <li>@pro[0].Memory</li>
-                                <li>@pro[0].Rate</li>
-                                <li>@pro[0].Category</li>
+                                <li>@prod.Branch</li>
+                                <li>@prod.Memory</li>
+                                <li>@prod.Rate</li>
+                                <li>@prod.Category</li>
                                 <li class="na">Ảnh</li>
                             </ul>
                             <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
+                                <a href="@prod.ProductUrl" target="_blank" class="btn-buy">Buy Now</a>
                             </div>
                         </div>
-                    }
-                    else
-                    {
-                        <div class="pricing-item featured">
-                            <h3>Shop 1</h3>
-                            <h4><sup>$</sup>19<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-
-                    }
-                }
-            </div><!-- End Pricing Item -->
-
-            <div class="col-xl-4 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="pricing-item">
-                    <h3>@Model.Shop</h3>
-                    <h4><strong>@Model.Name</strong></h4>
-                    <h4>@Model.Price</h4>
-                    <ul>
-                        <li>@Model.Branch</li>
-                        <li>@Model.Memory GB</li>
-                        <li>@Model.Rate</li>
-                        <li>@Model.Category</li>
-                        <li><img srcset="@Model.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
-                    </ul>
-                    <div class="btn-wrap">
-                        <a href="@Model.ProductUrl" target="_blank" class="btn-buy">Buy Now</a>
                     </div>
-                </div><!-- End Pricing Item -->
-            </div>
-            <div class="col-xl-4 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                @if (ViewData["twoProducts"] != null)
-                {
-                    var pro = ViewData["twoProducts"] as List<Product>;
-                    if (pro[1] != null)
-                    {
-                        <div class="pricing-item featured">
-                            <h3>@pro[1].Shop</h3>
-                            <h4>@pro[1].Name</h4>
-                            <h4>@pro[1].Price</h4>
-                            <ul>
-                                <li>@pro[1].Branch</li>
-                                <li>@pro[1].Memory</li>
-                                <li>@pro[1].Rate</li>
-                                <li>@pro[1].Category</li>
-                                <li class="na">Ảnh</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
-                    }
-                    else
-                    {
-                        <div class="pricing-item featured">
-                            <h3>Shop 2</h3>
-                            <h4><sup>$</sup>19<span> / month</span></h4>
-                            <ul>
-                                <li>Aida dere</li>
-                                <li>Nec feugiat nisl</li>
-                                <li>Nulla at volutpat dola</li>
-                                <li>Pharetra massa</li>
-                                <li class="na">Massa ultricies mi</li>
-                            </ul>
-                            <div class="btn-wrap">
-                                <a href="#" class="btn-buy">Buy Now</a>
-                            </div>
-                        </div>
 
-                    }
-
-                }
-            </div><!-- End Pricing Item -->
+                    <!-- End Pricing Item -->
+                }                            
+                
+            }
+            
         </div>
     </div>
 

@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -5,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using PriceComparisonApp.Data;
 using PriceComparisonApp.Models;
 using System.Diagnostics;
+using System.Net;
 
 namespace PriceComparisonApp.Controllers
 {
@@ -50,9 +53,14 @@ namespace PriceComparisonApp.Controllers
             {
                 return NotFound();
             }
-
             var twoRelatedProducts = _context.Products.
                 Where(p => p.Name.Contains(product.Name)).Where(pp => pp.Id != id).ToList();
+
+            if (twoRelatedProducts.Count <= 1)
+            {
+                twoRelatedProducts = _context.Products.Where(p=>p.Price <= product.Price).OrderByDescending(p=>p.Price).Take(6).ToList();
+                
+            }
             ViewData["twoProducts"] = twoRelatedProducts;
             return View(product);
         }
@@ -63,20 +71,14 @@ namespace PriceComparisonApp.Controllers
             {
                 return Problem("Entity set 'PriceComparisonDbContext.Product'  is null.");
             }
-
             var products = from m in _context.Products
                            select m;
-
             if (!String.IsNullOrEmpty(category))
             {
                 products = products.Where(s => s.Category!.ToUpper().Contains(category.ToUpper()));
             }
-
             return View("Products", products.ToList());
-
         }
-
-
         public IActionResult Index()
         {
             try
@@ -93,11 +95,7 @@ namespace PriceComparisonApp.Controllers
 
                 return View();
             }
-
-            
         }
-
-
         public IActionResult Contact()
         {
             return View();
@@ -116,7 +114,8 @@ namespace PriceComparisonApp.Controllers
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
+       
     }
 }
