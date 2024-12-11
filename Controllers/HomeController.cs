@@ -58,7 +58,8 @@ namespace PriceComparisonApp.Controllers
 
             if (twoRelatedProducts.Count <= 1)
             {
-                twoRelatedProducts = _context.Products.Where(p=>p.Price <= product.Price).OrderByDescending(p=>p.Price).Take(6).ToList();
+                twoRelatedProducts = _context.Products.Where(p => p.Price <= product.Price).ToList();
+                twoRelatedProducts = twoRelatedProducts.Where(p=>p.Category == product.Category).OrderByDescending(p=>p.Price).Take(6).ToList();
                 
             }
             ViewData["twoProducts"] = twoRelatedProducts;
@@ -75,7 +76,7 @@ namespace PriceComparisonApp.Controllers
                            select m;
             if (!String.IsNullOrEmpty(category))
             {
-                products = products.Where(s => s.Category!.ToUpper().Contains(category.ToUpper()));
+                products = products.Where(s => s.Category!.ToUpper().Contains(category.ToUpper())).OrderByDescending(p=>p.Price);
             }
             return View("Products", products.ToList());
         }
