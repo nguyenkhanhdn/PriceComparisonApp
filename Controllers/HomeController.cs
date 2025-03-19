@@ -1,13 +1,5 @@
-using Microsoft.AspNetCore.Diagnostics;
-using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
-using PriceComparisonApp.Data;
-using PriceComparisonApp.Models;
-using System.Diagnostics;
-using System.Net;
 
 namespace PriceComparisonApp.Controllers
 {
@@ -15,8 +7,8 @@ namespace PriceComparisonApp.Controllers
     {
 
 
-        private readonly PriceComparisonDbContext _context;
-        public HomeController(PriceComparisonDbContext context)
+        private readonly PriceComparisonApp.Data.PriceComparisonDbContext _context;
+        public HomeController(PriceComparisonApp.Data.PriceComparisonDbContext context)
         {
             _context = context;
         }

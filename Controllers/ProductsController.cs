@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using PriceComparisonApp.Data;
+//using PriceComparisonApp.Data;
 using PriceComparisonApp.Models;
 
 namespace PriceComparisonApp.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly PriceComparisonDbContext _context;
+        private readonly PriceComparisonApp.Data.PriceComparisonDbContext _context;
 
-        public ProductsController(PriceComparisonDbContext context)
+        public ProductsController(PriceComparisonApp.Data.PriceComparisonDbContext context)
         {
             _context = context;
         }

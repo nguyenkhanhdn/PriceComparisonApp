@@ -1,0 +1,18 @@
+﻿@using PriceComparisonApp.Data
+@model RecommendationViewModel
+
+@{
+    ViewData["Title"] = "AI - Gợi ý sản phẩm";
+    Layout = "_AdLayout";
+}
+
+
+<h2>Gợi ý sản phẩm cho: @Model.SelectedProduct.Name</h2>
+<ul>
+    @foreach (var product in Model.RecommendedProducts)
+    {
+        <li>
+            <strong>@product.Name</strong> - Giá: @product.Price - Đánh giá: @product.Rate
+        </li>
+    }
+</ul>

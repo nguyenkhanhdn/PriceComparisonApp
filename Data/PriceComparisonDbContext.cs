@@ -14,6 +14,6 @@ namespace PriceComparisonApp.Data
         }
 
 
-        public DbSet<Product> Products { get; set; }
+        public DbSet<PriceComparisonApp.Models.Product> Products { get; set; }
     }
 }
