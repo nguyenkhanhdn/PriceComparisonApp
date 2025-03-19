@@ -8,7 +8,7 @@ namespace PriceComparisonApp.Services
     public class ProductService
     {
         private static readonly string ModelPath = @"Data\product_recommender_model.zip";
-        private static readonly string FilePath = "Data/products.csv";
+        private static readonly string FilePath = @"Data\products.csv";
         private MLContext mlContext;
         private ITransformer model;
 
@@ -82,7 +82,6 @@ namespace PriceComparisonApp.Services
         private List<Product> LoadProductsFromCsv()
         {
             var curDir = Environment.CurrentDirectory;            
-
             var dataFile = Path.Combine(curDir, @"data\Products.csv");
 
             using var reader = new StreamReader(dataFile);

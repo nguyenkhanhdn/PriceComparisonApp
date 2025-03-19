@@ -3,16 +3,80 @@
 
 @{
     ViewData["Title"] = "AI - Gợi ý sản phẩm";
-    Layout = "_AdLayout";
+    Layout = "_Layout";
 }
 
 
-<h2>Gợi ý sản phẩm cho: @Model.SelectedProduct.Name</h2>
-<ul>
+
+@* <ul>
     @foreach (var product in Model.RecommendedProducts)
     {
         <li>
+            <img srcset="@product.ProductImg" class="card-img-overlay" />
             <strong>@product.Name</strong> - Giá: @product.Price - Đánh giá: @product.Rate
         </li>
     }
-</ul>
+</ul> *@
+
+<section id="pricing" class="pricing section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Gợi ý sản phẩm cho: @Model.SelectedProduct.Name</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+        <div class="row gy-3">
+            @foreach (var item in Model.RecommendedProducts)
+            {
+                <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    @if (ViewBag.MinPrice == item.Price)
+                    {
+                        <div class="pricing-item featured">
+                            <h6><strong>@item.Name</strong></h6>
+                            <h5>@item.Price</h5>
+                            <ul>
+                                <li>@item.Rate</li>
+                                <li><img srcset="@item.ProductImg" class="img-fliud" style="width:200px;" /> </li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="~/Home/ProdDetail/@item.Id" class="btn-buy">Chi tiết</a>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="pricing-item">
+                            <h6><strong>@item.Name</strong></h6>
+                            <h5>@item.Price</h5>
+                            <ul>
+                                <li>
+                                    @{
+                                        var int_val = (int)item.Rate;
+                                        var rem_val = item.Rate % 10;
+                                        for (int i = 1; i <= int_val; i++)
+                                        {
+                                            <span class="fa fa-star checked"></span>
+                                        }
+                                        if (rem_val >= 0.5)
+                                        {
+                                            <span class="fa fa-star-half checked"></span>
+                                        }
+                                    }
+                                    (@item.Rate)
+                                </li>
+                                <li><img srcset="@item.ProductImg" class="img-fliud" style="width:200px;" /> </li>
+                            </ul>
+                            <div class="btn-wrap">
+                                <a href="~/Home/ProdDetail/@item.Id" class="btn-buy">Chi tiết</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <!-- End Pricing Item -->
+            }
+        </div>
+    </div>
+</section><!-- /Pricing Section -->

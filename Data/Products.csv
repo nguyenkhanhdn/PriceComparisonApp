@@ -1,47 +1,47 @@
-Id,Name,Price,Rate,Manufacturer
-1,Nubia V70 Design 8GB 256GB,2990000,4.5,Nubia
-2,Xiaomi Poco M6 Pro 8GB 256GB,5490000,4.5,Xiaomi
-3,Samsung Galaxy M55 5G 256GB,8590000,4.5,Samsung
-4,Honor X9c 5G 12GB 256GB,9190000,4.5,Honor
-5,Honor Magic V3 5G 12GB 512GB,3.80E+07,4.5,Honor
-6,Xiaomi 14T Pro 5G 12GB 1TB,1.55E+07,4.5,Xiaomi
-7,Honor X7c 8GB 256GB,4990000,4.5,Honor
-8,Xiaomi Poco M6 Pro 12GB 512GB,5990000,4.5,Xiaomi
-9,Honor 200 5G 12GB 256GB,1.20E+07,4.5,Honor
-10,Inoi A34 12GB (3+9GB) 128GB,1990000,4.5,Inoi
-11,iPhone 16 Pro Max 256GB,3.14E+07,4.5,Apple
-12,Samsung Galaxy Z Fold6 5G 256GB,3.47E+07,4.5,Samsung
-13,Samsung Galaxy S24 FE 5G 128GB,1.35E+07,4.5,Samsung
-14,iPhone 16 Pro 128GB,2.55E+07,4.5,Apple
-15,iPhone 16 128GB,1.95E+07,4.5,Apple
-16,iPhone 16 Plus 128GB,2.27E+07,4.5,Apple
-17,Samsung Galaxy A36 5G 8GB 128GB,7990000,4.5,Samsung
-18,iPhone 16e 128GB,1.66E+07,4.5,Apple
-19,Honor X9c 5G 12GB 256GB,9190000,4.5,Honor
-20,OPPO Reno13 F 8GB 256GB,8790000,4.5,Oppo
-21,Xiaomi Redmi Note 14 6GB 128GB,4990000,4.5,Xiaomi
-22,Honor X7c 8GB 256GB,4990000,4.5,Honor
-23,Masstel Izi 16 4G,450000,4.5,Mastel
-24,Samsung Galaxy A06 4GB 128GB,3190000,4.5,Samsung
-25,Inoi 240 Modern 4G,390000,4.5,Inoi
-26,OPPO A3 6GB 128GB,4590000,4.5,Oppo
-27,iPhone 16 Pro Max 256GB | Chính hãng VN/A,3.13E+07,4.7,Apple
-28,Samsung Galaxy S25 Ultra 12GB 256GB,2.85E+07,4.7,Samsung
-29,Xiaomi Redmi Note 14 6GB 128GB,4990000,4.7,Xiaomi
-30,Samsung Galaxy S25 256GB,2.00E+07,4.7,Samsung
-31,Xiaomi 15 5G 12GB 256GB,2.20E+07,4.7,Xiaomi
-32,iPhone 16e 128GB | Chính hãng VN/A,1.65E+07,4.7,Apple
-33,Xiaomi 15 Ultra 5G 16GB 512GB,3.20E+07,4.7,Xiaomi
-34,Samsung Galaxy S24 FE 5G 8GB 128GB,1.35E+07,4.7,Samsung
-35,OPPO Reno10 Pro+ 5G 12GB 256GB,1.10E+07,4.7,Oppo
-36,iPhone 15 128GB | Chính hãng VN/A,1.60E+07,4.7,Apple
-37,iPhone 16 Pro 128GB | Chính hãng VN/A,2.54E+07,4.7,Apple
-38,iPhone 13 128GB | Chính hãng VN/A,1.19E+07,4.7,Apple
-39,Samsung Galaxy A15 LTE 8GB 128GB,4290000,4.7,Samsung
-40,iPhone 15 Pro Max 256GB | Chính hãng VN/A,2.80E+07,4.7,Apple
-41,Samsung Galaxy Z Fold6 12GB 256GB,3.51E+07,4.7,Samsung
-42,Nothing Phone 2A 5G 8GB 128GB - Ch? có t?i CellphoneS,6790000,4.7,Xiaomi
-43,Xiaomi Redmi Note 14 Pro Plus 5G 8GB 256GB,1.07E+07,4.7,Xiaomi
-44,Samsung Galaxy S24 Ultra 12GB 256GB,2.30E+07,4.7,Samsung
-45,Samsung Galaxy M55 12GB 256GB,9190000,4.7,Samsung
-46,Xiaomi POCO M6 6GB 128GB - Ch? có t?i CellphoneS,3490000,4.7,Xiaomi
+Id,Name,Price,Rate,Manufacturer,ProductImg
+1,Nubia V70 Design 8GB 256GB,2990000,4.5,Nubia,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/nubia_v70_design_xanh_5_93acc5fb92.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/nubia_v70_design_xanh_5_93acc5fb92.jpg 2x"
+2,Xiaomi Poco M6 Pro 8GB 256GB,5490000,4.5,Xiaomi,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/poco_m6_pro_003aba177e.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/poco_m6_pro_003aba177e.png 2x"
+3,Samsung Galaxy M55 5G 256GB,8590000,4.5,Samsung,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samsung_galaxy_m55_den_4_d7f9674500.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/samsung_galaxy_m55_den_4_d7f9674500.jpg 2x"
+4,Honor X9c 5G 12GB 256GB,9190000,4.5,Honor,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/honor_x9c_tim_5_0ac40e3956.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/honor_x9c_tim_5_0ac40e3956.png 2x"
+5,Honor Magic V3 5G 12GB 512GB,3.80E+07,4.5,Honor,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/honor_magic_v3_xanh_2_2e82ae0429.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/honor_magic_v3_xanh_2_2e82ae0429.png 2x"
+6,Xiaomi 14T Pro 5G 12GB 1TB,1.55E+07,4.5,Xiaomi,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/xiaomi_14t_pro_blue_1_5f61c0cb50.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/xiaomi_14t_pro_blue_1_5f61c0cb50.png 2x"
+7,Honor X7c 8GB 256GB,4990000,4.5,Honor,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/honor_x7c_xanh_5_560007b413.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/honor_x7c_xanh_5_560007b413.jpg 2x"
+8,Xiaomi Poco M6 Pro 12GB 512GB,5990000,4.5,Xiaomi,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/poco_m6_pro_003aba177e.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/poco_m6_pro_003aba177e.png 2x"
+9,Honor 200 5G 12GB 256GB,1.20E+07,4.5,Honor,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/honor_200_5g_trang_5_56db4af3b6.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/honor_200_5g_trang_5_56db4af3b6.jpg 2x"
+10,Inoi A34 12GB (3+9GB) 128GB,1990000,4.5,Inoi,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/inoi_a34_den_4_be08f2aa0a.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/inoi_a34_den_4_be08f2aa0a.jpg 2x"
+11,iPhone 16 Pro Max 256GB,3.14E+07,4.5,Apple,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/iphone_16_pro_max_bda3030b4b.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/iphone_16_pro_max_bda3030b4b.png 2x"
+12,Samsung Galaxy Z Fold6 5G 256GB,3.47E+07,4.5,Samsung,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samsung_galaxy_z_fold6_thumb_3c94cadb15.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/samsung_galaxy_z_fold6_thumb_3c94cadb15.png 2x"
+13,Samsung Galaxy S24 FE 5G 128GB,1.35E+07,4.5,Samsung,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samssung_galaxy_s24_fe_xanh_723e4e6443.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/samssung_galaxy_s24_fe_xanh_723e4e6443.png 2x"
+14,iPhone 16 Pro 128GB,2.55E+07,4.5,Apple,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/iphone_16_pro_37987b6def.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/iphone_16_pro_37987b6def.png 2x"
+15,iPhone 16 128GB,1.95E+07,4.5,Apple,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/iphone_16_f27848b783.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/iphone_16_f27848b783.png 2x"
+16,iPhone 16 Plus 128GB,2.27E+07,4.5,Apple,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/iphone_16_plus_c7b3ef901b.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/iphone_16_plus_c7b3ef901b.png 2x"
+17,Samsung Galaxy A36 5G 8GB 128GB,7990000,4.5,Samsung,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samssung_galaxy_a36_den_1_6ee59fffb0.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/samssung_galaxy_a36_den_1_6ee59fffb0.jpg 2x"
+18,iPhone 16e 128GB,1.66E+07,4.5,Apple,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/iphone_16e_dd_5d31cf354b.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/iphone_16e_dd_5d31cf354b.jpg 2x"
+19,Honor X9c 5G 12GB 256GB,9190000,4.5,Honor,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/honor_x9c_tim_5_0ac40e3956.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/honor_x9c_tim_5_0ac40e3956.png 2x"
+20,OPPO Reno13 F 8GB 256GB,8790000,4.5,Oppo,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/oppo_reno13_f_5g_xam_4_40988633f5.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/oppo_reno13_f_5g_xam_4_40988633f5.png 2x"
+21,Xiaomi Redmi Note 14 6GB 128GB,4990000,4.5,Xiaomi,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/xiaomi_redmi_note_14_den_4_2f995df92e.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/xiaomi_redmi_note_14_den_4_2f995df92e.png 2x"
+22,Honor X7c 8GB 256GB,4990000,4.5,Honor,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/honor_x7c_xanh_5_560007b413.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/honor_x7c_xanh_5_560007b413.jpg 2x"
+23,Masstel Izi 16 4G,450000,4.5,Mastel,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/izi_16_den_4_c4e5c70fe5.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/izi_16_den_4_c4e5c70fe5.jpg 2x"
+24,Samsung Galaxy A06 4GB 128GB,3190000,4.5,Samsung,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/samsung_galaxy_a06_blue_black_1_46d3694f11.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/samsung_galaxy_a06_blue_black_1_46d3694f11.png 2x"
+25,Inoi 240 Modern 4G,390000,4.5,Inoi,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/inoi_240_modern_blue_859cc38b37.png 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/inoi_240_modern_blue_859cc38b37.png 2x"
+26,OPPO A3 6GB 128GB,4590000,4.5,Oppo,"https://cdn2.fptshop.com.vn/unsafe/150x0/filters:quality(100)/oppo_a3_tim_5_a81a5f4bf7.jpg 1x, https://cdn2.fptshop.com.vn/unsafe/360x0/filters:quality(100)/oppo_a3_tim_5_a81a5f4bf7.jpg 2x"
+27,iPhone 16 Pro Max 256GB | Chính hãng VN/A,3.13E+07,4.7,Apple,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max.png
+28,Samsung Galaxy S25 Ultra 12GB 256GB,2.85E+07,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25-ultra_3__3.png
+29,Xiaomi Redmi Note 14 6GB 128GB,4990000,4.7,Xiaomi,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-redmi-note-14_2__2.png
+30,Samsung Galaxy S25 256GB,2.00E+07,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s25_1__2.png
+31,Xiaomi 15 5G 12GB 256GB,2.20E+07,4.7,Xiaomi,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-15_11_.png
+32,iPhone 16e 128GB | Chính hãng VN/A,1.65E+07,4.7,Apple,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16e-128gb.png
+33,Xiaomi 15 Ultra 5G 16GB 512GB,3.20E+07,4.7,Xiaomi,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-15-ultra_2_.png
+34,Samsung Galaxy S24 FE 5G 8GB 128GB,1.35E+07,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-s24-fe_3__4.png
+35,OPPO Reno10 Pro+ 5G 12GB 256GB,1.10E+07,4.7,Oppo,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-reno10-pro-plus-tim.png
+36,iPhone 15 128GB | Chính hãng VN/A,1.60E+07,4.7,Apple,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-plus_1__1.png
+37,iPhone 16 Pro 128GB | Chính hãng VN/A,2.54E+07,4.7,Apple,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro_1.png
+38,iPhone 13 128GB | Chính hãng VN/A,1.19E+07,4.7,Apple,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/5/15_2_7_2_5.jpg
+39,Samsung Galaxy A15 LTE 8GB 128GB,4290000,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/a/galaxy-a15-xanh-01.png
+40,iPhone 15 Pro Max 256GB | Chính hãng VN/A,2.80E+07,4.7,Apple,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-15-pro-max_3.png
+41,Samsung Galaxy Z Fold6 12GB 256GB,3.51E+07,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-z-fold-6-xanh_5_.png
+42,Nothing Phone 2A 5G 8GB 128GB - Ch? có t?i CellphoneS,6790000,4.7,Xiaomi,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-nothing-phone-2a_1_1.png
+43,Xiaomi Redmi Note 14 Pro Plus 5G 8GB 256GB,1.07E+07,4.7,Xiaomi,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/r/e/redmi-note-14-pro-plus-xanh.jpg
+44,Samsung Galaxy S24 Ultra 12GB 256GB,2.30E+07,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/s/ss-s24-ultra-xam-222.png
+45,Samsung Galaxy M55 12GB 256GB,9190000,4.7,Samsung,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-samsung-galaxy-m55.png
+46,Xiaomi POCO M6 6GB 128GB - Ch? có t?i CellphoneS,3490000,4.7,Xiaomi,https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/p/o/poco-m6_1_.png

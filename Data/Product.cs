@@ -7,5 +7,6 @@
         public float Price { get; set; }
         public float Rate { get; set; }
         public string Manufacturer { get; set; }
+        public string ProductImg { get; set; }
     }
 }

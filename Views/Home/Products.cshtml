@@ -64,7 +64,7 @@
     </div>
 
 </section><!-- /Clients Section -->
-<!-- Pricing Section -->
+<!-- products Section -->
 <section id="pricing" class="pricing section">
 
     <!-- Section Title -->
@@ -93,7 +93,8 @@
                                 <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
                             </ul>
                             <div class="btn-wrap">
-                                <a href="~/Home/ProdDetail/@item.Id" class="btn-buy">Chi tiết</a>
+                                <a href="~/Home/ProdDetail/@item.Id" class="btn-buy">Chi tiết</a> - 
+                                <a href="~/Product/Recommendations?id=@item.Id" class="btn btn-buy">AI gợi ý</a>
                             </div>
                         </div>
                     }
@@ -125,7 +126,8 @@
                                 <li><img srcset="@item.ImgUrl" class="img-fliud" style="width:200px;" /> </li>
                             </ul>
                             <div class="btn-wrap">
-                                <a href="~/Home/ProdDetail/@item.Id" class="btn-buy">Chi tiết</a>
+                                <a href="~/Home/ProdDetail/@item.Id" class="btn-buy">Chi tiết</a> -  
+                                <a href="~/Product/Recommendations?id=@item.Id" class="btn-buy">AI gợi ý</a>
                             </div>
                         </div>
                     }
